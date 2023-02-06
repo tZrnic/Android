@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/SendCash"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/register"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_email_register"
+        app:layout_constraintEnd_toEndOf="@+id/editText_email_register"
+        app:layout_constraintStart_toStartOf="@+id/editText_email_register" />
+
+    <EditText
+        android:id="@+id/editText_email_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="280dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:backgroundTint="#000000"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_password_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@+id/editText_email_register"
+        app:layout_constraintStart_toStartOf="@+id/editText_email_register"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email_register" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/editText_id"
+        app:layout_constraintStart_toStartOf="@+id/editText_id"
+        app:layout_constraintTop_toBottomOf="@+id/editText_id" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:maxLength="10"
+        android:hint="@string/id"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@+id/editText_password_register"
+        app:layout_constraintStart_toStartOf="@+id/editText_password_register"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password_register" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/already_have"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_register"
+        app:layout_constraintStart_toStartOf="@+id/button_register"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+
+    <Button
+        android:id="@+id/button_regtolog"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_right_reg"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/cash" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_left_reg"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/cash_rotated" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

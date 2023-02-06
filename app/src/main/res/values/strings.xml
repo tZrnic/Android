@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="SendCash">SendCash</string>
+    <string name="login">Log in</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="or">or</string>
+    <string name="id">Personal ID</string>
+    <string name="already_have">Already have an account?</string>
+    <string name="balance">Your balance:</string>
+    <string name="euro">€</string>
+    <string name="recipient_id">Enter recipient s Personal ID</string>
+    <string name="enter_amount">Enter amount of money you want to send</string>
+    <string name="add">Add money!</string>
+    <string name="card_number">Card number</string>
+    <string name="cvv">CVV</string>
+    <string name="amount">Amount:</string>
+    <string name="logout">Log Out</string>
+    <string name="services">Services</string>
+    <string name="transport">Transport</string>
+    <string name="mobile_services">Mobile Services</string>
+    <string name="mobile_voucher">Mobile voucher</string>
+    <string name="choose_voucher">Choose voucher:</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="enc">ENC</string>
+    <string name="enc_amount">Add money to your ENC</string>
+    <string name="number_plate">Number plate:</string>
+</resources>

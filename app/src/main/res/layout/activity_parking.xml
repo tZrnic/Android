@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:foregroundTint="#000000"
+    tools:context=".Parking">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/SendCash"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_right_log"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/cash" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_left_log"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/cash_rotated" />
+
+    <TextView
+        android:id="@+id/textViewParking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Parking"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBackParking"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewParking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewParking"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageViewParking"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewParking"
+        app:srcCompat="@drawable/parking" />
+
+    <TextView
+        android:id="@+id/textViewChooseZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_voucher"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewParking" />
+
+
+    <Button
+        android:id="@+id/buttonZone0"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:text="Zone 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseZone" />
+
+    <Button
+        android:id="@+id/buttonZone1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Zone 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseZone" />
+
+    <Button
+        android:id="@+id/buttonZone2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Zone 2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonZone0"
+        app:layout_constraintStart_toStartOf="@+id/buttonZone0"
+        app:layout_constraintTop_toBottomOf="@+id/buttonZone0" />
+
+    <Button
+        android:id="@+id/buttonZone3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Zone 3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonZone1"
+        app:layout_constraintStart_toStartOf="@+id/buttonZone1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonZone1" />
+
+    <Button
+        android:id="@+id/buttonBuyParkingTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:text="BUY!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:hint="VT123DJ"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:maxLength="10"
+        android:textSize="16sp"
+        android:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNumberPlate"
+        app:layout_constraintStart_toEndOf="@+id/textViewNumberPlate"
+        app:layout_constraintTop_toTopOf="@+id/textViewNumberPlate" />
+
+    <TextView
+        android:id="@+id/textViewNumberPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/number_plate"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyParkingTicket"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextHours"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="1"
+        android:textColor="#000000"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHours"
+        app:layout_constraintStart_toEndOf="@+id/textViewHours"
+        app:layout_constraintTop_toTopOf="@+id/textViewHours" />
+
+    <TextView
+        android:id="@+id/textViewHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="40dp"
+        android:text="Hours:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNumberPlate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Zone:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextHours"
+        app:layout_constraintStart_toEndOf="@+id/editTextHours"
+        app:layout_constraintTop_toTopOf="@+id/editTextHours" />
+
+    <TextView
+        android:id="@+id/textViewZoneSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewZone"
+        app:layout_constraintStart_toEndOf="@+id/textViewZone"
+        app:layout_constraintTop_toTopOf="@+id/textViewZone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

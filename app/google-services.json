@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680101349099",
+    "project_id": "sendcash-88938",
+    "storage_bucket": "sendcash-88938.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680101349099:android:ae732a88b115b0cbfc60ae",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680101349099-1v804ogciuflrai81l69r1dt88fhv8uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Oc6rnMCbLllNW0DUE3n8rgjo2shhwSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680101349099-1v804ogciuflrai81l69r1dt88fhv8uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

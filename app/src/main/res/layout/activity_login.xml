@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:foregroundTint="#000000"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/SendCash"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_email_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_email_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:backgroundTint="#000000"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_logtoreg"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/register"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_login_login"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/button_login_login"
+        app:layout_constraintTop_toBottomOf="@+id/textView_or" />
+
+    <Button
+        android:id="@+id/button_login_login"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password_login" />
+
+    <TextView
+        android:id="@+id/textView_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/or"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_login_login"
+        app:layout_constraintStart_toStartOf="@+id/button_login_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login_login" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_right_log"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/cash" />
+
+    <ImageView
+        android:id="@+id/imageView_cash_left_log"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/cash_rotated" />
+
+    <EditText
+        android:id="@+id/editText_password_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textColor="#000000"
+        android:backgroundTint="#000000"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@+id/editText_email_login"
+        app:layout_constraintStart_toStartOf="@+id/editText_email_login"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
